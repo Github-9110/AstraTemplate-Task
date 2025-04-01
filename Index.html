@@ -1,175 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature Theme Template</title>
+    <title>Outdoor Adventure</title>
+    <!-- Bootstrap 4 CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .bg-image {
-            position: relative;
-            background-image: url('img/header-hero.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            /* Full height */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .bg-overlay {
-            position: absolute;
+        /* Make the navbar sticky */
+        .navbar {
+            position: sticky;
             top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.2);
-            z-index: 1;
+            z-index: 1000; /* Ensure the navbar stays on top */
         }
 
-        .hero-text {
+        /* Hero section with new background image */
+        .hero {
+            background: url('https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/hero-bg.jpg') no-repeat center center;
+            background-size: cover;
+            height: 150vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             color: white;
+            background-attachment:fixed;
+        }
+
+        /* Hero section with new background image */
+        .hero-Explore {
+            background: url('https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2020/01/section-bg-img.jpg') no-repeat center center;
+            background-size: cover;
+            height: 150vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-text h1 {
-            font-size: 4rem;
-        }
-
-        .hero-text p {
-            font-size: 1.2rem;
-        }
-
-        .custom-btn {
-            text-decoration: none!important;
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #536942;
-            background-color: #f7cf1d;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s, transform 0.2s;
-            z-index: 3;
-            position: relative;
-        }
-
-        .custom-btn:hover {
-            background-color: #f7cf1d;
-            transform: scale(1.05);
-        }
-
-       
-           /* Custom Styling for Section */
-           .service-section {
-            padding: 60px 0;
-        }
-        .service-card {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .service-card img {
-            max-width: 100%;
-            height: auto;
-        }
-        .service-title {
-            font-size: 1.5rem;
-            margin-top: 15px;
-            color: #333;
-        }
-        .service-description {
-            font-size: 1rem;
-            color: #777;
-        }
-
-        footer {
-            background-color: #333;
             color: white;
+            background-attachment:fixed;
+        }
+
+        /* New section with background image */
+        .new-section {
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            padding: 1rem;
+            color: white;
+        }
+
+        /* Additional padding for the main content */
+        .container {
+            padding-top: 100px;
+        }
+
+        .new-section h2 {
+            font-size: 3rem;
         }
     </style>
 </head>
-
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Nature Love</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Outdoor Adventure</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                    <div class="ast-builder-button-wrap ast-builder-button-size- py-2 bg-danger rounded-pill px-4">
+                        <a class="ast-custom-button-link text-white" href="#" target="_self">
+                            <div class="ast-custom-button">Take Action</div>
+                        </a>
+                    </div>
+            </ul>
         </div>
     </nav>
 
-    <!-- Full-Screen Background Section -->
-    <section class="bg-image">
-        <div class="bg-overlay"></div>
-        <div class="hero-text">
-            <h1>Welcome to Nature</h1>
-            <p>Explore the beauty of the natural world.</p>
-            <a href="https://websitedemos.net/love-nature-02/?customize=template#" class="custom-btn">Get Started</a>
+    <!-- Hero Section (Non-Sticky) -->
+   
+
+    <!-- New Section with Background Image -->
+    <div class="hero">
+        <header >
+            <div>
+                <h1 class="display-4">Explore the Colourful World</h1>
+                <p class="lead">A Wonderful Gift</p>
+                <a href="#" class="btn btn-light btn-lg">Learn More</a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Upcoming Events -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Upcoming Events</h2>
+        <div class="row">
+            <!-- Event 1 -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2020/01/hiking-v1.jpg" class="card-img-top" alt="Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Everest Camp Trek</h5>
+                        <p class="card-text">Description of the Everest Camp Trek event.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 2 -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2020/01/walking-v1.jpg" class="card-img-top" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Walking Holidays</h5>
+                        <p class="card-text">Description of the Walking Holidays event.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-     <!-- Our Services Section -->
-     <div class="container service-section">
-        <div class="row text-center mb-4">
-            <div class="col-12">
-                <h2>Our Services</h2>
-                <hr style="width: 60px; margin: 20px auto; border-color: #ffd936;">
+    <div class="hero-Explore">
+        <header >
+            <div>
+                <h1 class="display-4">Explore The World</h1>
+                <p class="lead">Diremit mundi mare undae nunc mixtam tanto sibi. Nubes unda concordi. Fert his. Recessit mentes praecipites locum caligine sui egens erat. Silvas caeli regna.</p>
+                <a href="#" class="btn btn-light btn-lg bg-danger rounded-pill font-weight-bold text-white">LEARN MORE</a>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 service-card">
-                <img src="img/service-1.jpg" alt="Web Design">
-                <h3 class="service-title">Web Design</h3>
-                <p class="service-description">Focus on how you can help and benefit your user. Use simple words so that you don't confuse people.</p>
-            </div>
-            <div class="col-md-4 service-card">
-                <img src="img/service-2.jpg" alt="Graphic Design">
-                <h3 class="service-title">Graphic Design</h3>
-                <p class="service-description">Focus on how you can help and benefit your user. Use simple words so that you don't confuse people.</p>
-            </div>
-            <div class="col-md-4 service-card">
-                <img src="img/service-3.jpg" alt="Content Creation">
-                <h3 class="service-title">Content Creation</h3>
-                <p class="service-description">Focus on how you can help and benefit your user. Use simple words so that you don't confuse people.</p>
-            </div>
-        </div>
+        </header>
     </div>
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Nature Love. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: <a href="mailto:info@outdooradventure.com" class="text-white">info@outdooradventure.com</a></p>
+        <p>&copy; 2025 Outdoor Adventure</p>
     </footer>
 
-    <!-- Bootstrap 4 JS and dependencies -->
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
