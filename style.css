@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.section-one{
+    background-image:url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2019/12/home-new-bg-free-img.jpg");
+    height: 900px;
+    position: relative;
+    background-attachment: fixed;
+}
+.navbar{
+    opacity: 0.5;
+}
